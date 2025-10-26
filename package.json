@@ -1,0 +1,26 @@
+{
+  "name": "powanet",
+  "version": "1.0.0",
+  "description": "🌍 POWANET – Global AI Network built for the Pi Ecosystem",
+  "main": "App.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-scripts": "5.0.1"
+  },
+  "keywords": [
+    "Pi Network",
+    "AI",
+    "POWANET",
+    "Blockchain",
+    "Global Network"
+  ],
+  "author": "Aloys7878",
+  "license": "MIT"
+}
