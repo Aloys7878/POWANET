@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "next.config.js", "use": "@vercel/next" }
+  ],
+  "routes": [
+    {
+      "src": "/api/ai",
+      "dest": "https://demo-kzml39jghup9c2yta7hq.vusercontent.net/api/ai",
+      "methods": ["GET", "POST"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
