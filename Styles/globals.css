@@ -1,0 +1,23 @@
+:root {
+  --bg-dark: #050714;
+  --card-dark: #081229;
+  --accent: #00e6d9;
+  --glass: rgba(255,255,255,0.03);
+  --text: #e6f7f5;
+}
+body { margin:0; background:var(--bg-dark); color:var(--text); font-family:Inter,system-ui; }
+.app-root { min-height:100vh; padding:12px; }
+.topbar { display:flex; justify-content:space-between; align-items:center; padding:10px 0; }
+.brand { font-weight:700; color:var(--accent); }
+.container { max-width:1100px; margin:0 auto; }
+.hero { margin-bottom:12px; }
+.panels { display:flex; gap:14px; }
+.left { flex:1; } .right { width:420px; }
+.grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+.card { background:var(--card-dark); padding:12px; border-radius:12px; }
+.card.online { box-shadow:0 10px 30px rgba(0,230,217,0.06) }
+.ego-window { height:360px; overflow:auto; background:var(--glass); padding:8px; border-radius:8px; }
+.ego-input { display:flex; gap:8px; margin-top:8px; }
+.msg { padding:6px 8px; margin-bottom:6px; border-radius:6px; }
+.msg.ego { background:rgba(0,230,217,0.04); }
+.btn { background:var(--accent); color:#000; border:none; padding:8px 10px; border-radius:8px; }
