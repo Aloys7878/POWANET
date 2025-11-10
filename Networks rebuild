@@ -1,0 +1,43 @@
+import React from "react";
+
+const networks = [
+  { name: "HealthNet", icon: "❤️", status: "online" },
+  { name: "EcoNet", icon: "🌱", status: "online" },
+  { name: "EduNet", icon: "🎓", status: "online" },
+  { name: "AgriNet", icon: "🌾", status: "online" },
+  { name: "FinNet", icon: "💰", status: "online" },
+  { name: "GovNet", icon: "🏛️", status: "online" },
+  { name: "TechNet", icon: "💻", status: "online" },
+  { name: "TradeNet", icon: "🛒", status: "online" },
+  { name: "EnergyNet", icon: "⚡", status: "online" },
+  { name: "CityNet", icon: "🏙️", status: "online" },
+  { name: "TransNet", icon: "🚗", status: "online" },
+  { name: "WaterNet", icon: "💧", status: "online" },
+  { name: "FoodNet", icon: "🍎", status: "online" },
+  { name: "SafeNet", icon: "🛡️", status: "online" },
+  { name: "ComNet", icon: "📡", status: "updating" },
+  { name: "BizNet", icon: "📈", status: "online" },
+  { name: "ArtNet", icon: "🎨", status: "online" },
+  { name: "FaithNet", icon: "🕊️", status: "online" },
+  { name: "MediaNet", icon: "📰", status: "online" },
+  { name: "BuildNet", icon: "🏗️", status: "online" },
+  { name: "AirNet", icon: "✈️", status: "online" },
+  { name: "SeaNet", icon: "🚢", status: "online" },
+  { name: "AIHub", icon: "🤖", status: "online" },
+  { name: "CryptoNet", icon: "🪙", status: "updating" },
+  { name: "PeaceNet", icon: "🌍", status: "offline" },
+];
+
+export default function NetworkGrid() {
+  return (
+    <div className="network-grid">
+      {networks.map((net, i) => (
+        <div key={i} className={`network-card ${net.status}`}>
+          <span>{net.icon}</span>
+          <h4>{net.name}</h4>
+          <p>Status: {net.status}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
