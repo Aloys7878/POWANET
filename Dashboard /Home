@@ -1,0 +1,7 @@
+const dailyModules = [
+  { name: "Send", desc: "Transfer Pi or POWA globally", icon: "💸" },
+  { name: "Earn", desc: "Complete missions and earn rewards", icon: "🏆" },
+  { name: "Learn", desc: "Discover global education & AI lessons", icon: "🎓" },
+  { name: "Trade", desc: "Marketplace for local & global goods", icon: "🛒" },
+  { name: "Grow", desc: "Track eco impact & sustainability goals", icon: "🌱" },
+];
